@@ -1,0 +1,282 @@
+@-moz-viewport { width:device-width; scale: 1}
+@-ms-viewport { width:device-width; scale: 1}
+@-o-viewport { width:device-width; scale: 1}
+@-webkit-viewport { width:device-width; scale: 1}
+@viewport { width:device-width; scale: 1}
+
+html{
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *::before,*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: #FF6485;
+}
+
+.person {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+p {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 10px 10px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.name {
+  font-family: 'Rubik', sans-serif;
+  font-size: 70px;
+  color: #ff6485;
+  margin: 0;
+  position: absolute;
+  top: 2.5em;
+  right: 0.3em;
+  display: block;
+  text-shadow: 3px 3px #FFF;
+}
+
+.pinterest {
+  width: 33%;
+  float: left;
+  padding: 15px;
+}
+
+.github {
+  width: 33%;
+  float: left;
+  padding: 15px;
+}
+
+.behance {
+  width: 33%;
+  float: left;
+  padding: 15px;
+}
+
+.social {
+  text-align: center;
+  padding: 10px 10px 0 10px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .name {
+    font-size: 110px;
+    top: 1.8em;
+    right: 0.2em;
+  }
+
+  .cut {
+    max-height: 400px;
+    overflow: hidden;
+  }
+
+  .person {
+    margin-top: -1.5em;
+  }
+
+  .wrapper {
+    padding: 1em;
+  }
+
+  .pinterest {
+    width: 25%;
+    padding-left: 15px;
+  }
+
+  .github {
+    width: 25%;
+    padding-left: 15px;
+  }
+
+  .behance {
+    width: 25%;
+    padding-left: 15px;
+  }
+
+  .social {
+    padding-left: 60px;
+  }
+
+}
+
+@media only screen and (min-width: 35em) {
+
+  .name {
+    font-size: 130px;
+    top: 1.6em;
+  }
+
+  .person {
+    margin-top: -3em;
+  }
+
+  .cut {
+    max-height: 450px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  .wrapper {
+    padding: 0 2em 1em;
+  }
+
+  .social {
+    padding-left: 100px;
+  }
+
+}
+
+@media only screen and (min-width: 46em){
+
+  .name {
+    font-size: 150px;
+    top: 1.2em;
+  }
+
+  .person {
+    margin-top: -6em;
+  }
+
+  .cut {
+    max-height: 450px;
+    overflow: hidden;
+  }
+
+  p {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .social {
+    padding-left: 150px;
+   }
+
+}
+
+@media only screen and (min-width: 54em){
+
+  .person {
+    margin-top: -9em;
+  }
+
+  .cut {
+    max-height: 500px;
+  }
+
+  .instagram {
+    width: 20%;
+  }
+
+  .twitter{
+    width: 20%;
+  }
+
+  .email {
+    width: 20%;
+  }
+
+}
+
+@media only screen and (min-width: 60em){
+
+  .name {
+    font-size: 190px;
+    top: 0.9em;
+  }
+
+  p {
+    font-size: 19px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .person {
+    margin-top: -10rem;
+  }
+
+  .social {
+   padding-left: 280px;
+  }
+
+}
+
+@media only screen and (min-width: 72em){
+
+  .name {
+    font-size: 210px;
+    top: 2.1em;
+  }
+
+  .person {
+    margin-top: -10rem;
+  }
+
+  .cut {
+    max-height: 710px;
+  }
+
+  p {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .social {
+   padding-left: 380px;
+  }
+
+  .pinterest {
+    width: 15%;
+  }
+
+  .github {
+    width: 15%;
+  }
+
+  .behance {
+    width: 15%;
+  }
+
+}
+
+@media print {
+
+  .person{
+    display: none;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .pinterest {
+    width: 10%;
+  }
+
+  .github {
+    width: 10%;
+  }
+
+  .behance {
+    width: 10%;
+  }
+
+  main a::after {
+    content: " (" attr(href) ")";
+  }
+}

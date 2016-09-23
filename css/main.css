@@ -228,12 +228,14 @@ p {
   }
 
   .cut {
-    max-height: 710px;
+    max-height: 700px;
   }
 
   p {
+    padding-top: 50px;
     padding-left: 150px;
     padding-right: 150px;
+    padding-bottom: 20px;
   }
 
   .social {

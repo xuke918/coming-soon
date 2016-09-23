@@ -232,10 +232,7 @@ p {
   }
 
   p {
-    padding-top: 50px;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-bottom: 20px;
+    padding: 50px 150px 20px 150px;
   }
 
   .social {
